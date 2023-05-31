@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'graphene_django',
     
     # Local apps
-    'ingredients.apps.IngredientsConfig',
+    'apps.ingredients.apps.IngredientConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,5 +129,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 GRAPHENE = {
-    "SCHEMA": "django_root.schema.schema",
+    "SCHEMA": "config.schema.schema",
 }
