@@ -11,7 +11,7 @@ class Category(models.Model):
 class Ingrediant(models.Model):
     name = models.CharField(max_length=100)
     notes = models.TextField()
-    Category = models.ForeignKey('Category', on_delete=models.CASCADE)
+    category = models.ForeignKey('Category', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
